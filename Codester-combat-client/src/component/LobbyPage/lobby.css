@@ -1,0 +1,22 @@
+.lobby-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-group-lobby {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button-lobby {
+  background: #c4c4c4;
+  border-radius: 5px;
+  color: black;
+  height: fit-content;
+}

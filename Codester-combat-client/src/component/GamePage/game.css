@@ -1,0 +1,305 @@
+.skillButton {
+  background-color: #1a1e2c;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+}
+
+.skillButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.skillButtonClicked {
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+}
+
+
+.centerItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.iconSpacing {
+  margin-right: 5px;
+}
+
+.section {
+  background-color: #1e1e1e;
+  margin-top: 10px;
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+}
+
+.gutter {
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+  background-color: #1e1e1e;
+  cursor: col-resize;
+}
+
+.runCodeBtn {
+  background-color: #1a1e2c;
+  border: 2px solid white;
+  color: white;
+  margin-right: 10px;
+}
+
+.runCodeBtn:hover {
+  background-color: white;
+  color: black;
+}
+
+.player2 {
+  position: absolute;
+  right: 20%;
+  bottom: 10%;
+ 
+}
+
+.player1 {
+  position: absolute;
+  left: 20%;
+  bottom: 10%;
+}
+.skill2lee-player1 {
+  animation-timing-function: ease-in-out;
+  animation: leemove 2.5s infinite ease-in-out;
+  filter: drop-shadow(0 0 6px #34d14e);
+}
+@keyframes leemove {
+  0% {
+    transform: translateX(0);
+  }
+  100% { 
+    transform: translateX(61rem) translateY(-2rem) scale(1.1);
+  }
+}
+
+.gameBoard {
+  height: 45vh;
+  width: 100vw;
+  position: relative;
+}
+
+
+
+
+
+.shuriken {
+  position: absolute;
+  visibility: hidden;
+  left: 20%;
+  bottom: 20%;
+  filter: drop-shadow(0 0 6px #e9ab3a);
+  animation: mymove 0.7s infinite ease-in-out;
+}
+.skill1-player1 {
+  visibility: visible;
+  animation-timing-function: ease-in-out;
+}
+@keyframes mymove {
+  0% {
+    transform: translateX(0) rotate(800deg);
+  }
+  100% { 
+    transform: translateX(68rem) rotate(1200deg) scale(2);
+  }
+}
+
+.heal {
+  position: absolute;
+  visibility: hidden;
+  left: 20%;
+  bottom: 20%;
+
+}
+.heal-player1 {
+  visibility: visible;
+  filter: drop-shadow(0 0 6px #45e969);
+  animation: healmove 0.7s infinite ease-in-out;
+}
+@keyframes healmove {
+  0% {
+    transform: translateY(7rem) rotate(800deg);
+  }
+  100% { 
+    transform: translateY(-5rem) rotate(1200deg) scale(1.5);
+  }
+}
+.healContainer:nth-child(1) {
+  bottom: calc(20% - 15px);
+  left: calc(20% - 12px) ;
+  animation-delay: 0.1s;
+}
+.healContainer:nth-child(2) {
+  bottom: calc(19% - 15px);
+  left: calc(20% - 120px) ;
+  animation-delay: 0.2s;
+}
+.heal:nth-child(3) {
+  bottom: calc(19% - -9px);
+  left: calc(20% - -80px) ;
+  animation-delay: 0.25s;
+}
+.heal:nth-child(4) {
+  bottom: calc(19% - -9px);
+  left: calc(20% - 58px) ;
+  animation-delay: 0.2s;
+}
+
+.shield {
+  position: absolute;
+  visibility: hidden;
+  left: 25%;
+  bottom: 20%;
+
+}
+.shield-player1 {
+  visibility: visible;
+  filter: drop-shadow(0 0 6px #cbee4c);
+  animation: shieldmove 1.5s infinite ease-in-out;
+}
+@keyframes shieldmove {
+  0% {
+    transform: translateY(7rem);
+  }
+  100% { 
+    transform: translateY(2rem);
+  }
+}
+.skill2naruto {
+  position: absolute;
+  visibility: hidden;
+  left: 2%;
+  bottom: 30%;
+
+}
+.skill2naruto-player1 {
+  visibility: visible;
+  filter: drop-shadow(0 0 6px #4ef5ec);
+  animation: skill2narutomove 1.2s infinite ease-in-out;
+}
+@keyframes skill2narutomove {
+  0% {
+    transform: translateY(0rem) translateX(28rem) rotate(150deg) scale(2);
+  }
+  10% {
+    transform: translateY(-1rem) translateX(35rem) rotate(280deg) scale(2);
+  }
+  20% {
+    transform: translateY(-2rem) translateX(39rem) rotate(359deg) scale(2);
+  }
+  30% {
+    transform: translateY(-3rem) translateX(43rem) rotate(456deg) scale(3);
+  }
+  40% {
+    transform: translateY(-4rem) translateX(47rem) rotate(560deg) scale(3);
+  }
+  50% {
+    transform: translateY(-5rem) translateX(51rem) rotate(680deg) scale(3);
+  }
+  60% {
+    transform: translateY(-6rem) translateX(55rem) rotate(800deg) scale(4);
+  }
+  70% {
+    transform: translateY(-7rem) translateX(59rem) rotate(860deg) scale(4);
+  }
+  75% {
+    transform: translateY(-6rem) translateX(63rem) rotate(940deg) scale(4);
+  }
+  80% {
+    transform: translateY(-5rem) translateX(65rem) rotate(1000deg) scale(4);
+  }
+  85% {
+    transform: translateY(-4rem) translateX(71rem) rotate(1060deg) scale(4);
+  }
+  90% {
+    transform: translateY(-2rem) translateX(74rem) rotate(1150deg) scale(4);
+  }
+  95% {
+    transform: translateY(-1rem) translateX(79rem) rotate(1200deg) scale(4);
+  }
+  100% { 
+    transform: translateY(0rem) translateX(82rem) rotate(1270deg) scale(4);
+  }
+}
+
+.progressContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.progressPlayer1 {
+  position: absolute;
+  height: 20px;
+  width: 100px;
+  top: 250px;
+  left: 370px;
+}
+.progressPlayer2 {
+  position: absolute;
+  height: 20px;
+  width: 100px;
+  top: 250px;
+  right: 370px;
+}
+
+.topButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.timeButton {
+  position: absolute;
+  background-color: black;
+  border-radius: 15px;
+  border: 1px solid white;
+  color: white;
+  top: 20px;
+  left: 20px;
+}
+.surrenderButton {
+  position: absolute;
+  background-color: red;
+  border-radius: 15px;
+  border: 1px solid white;
+  color: white;
+  top: 20px;
+  right: 20px;
+}
+.wobble_effect {
+  animation: wobble 3s ease-in-out infinite,
+              flash 3s ease-in-out infinite;
+  animation-delay: 2.35s;
+}
+
+@keyframes wobble {
+  0% { transform: translateX(0%); } 
+  15% { transform: translateX(-25%) rotate(-5deg); } 
+  30% { transform: translateX(20%) rotate(3deg); } 
+  45% { transform: translateX(-15%) rotate(-3deg); } 
+  60% { transform: translateX(10%) rotate(2deg); }
+  75% { transform: translateX(-5%) rotate(-1deg); }
+  100% { transform: translateX(0%); } 
+} 
+@keyframes flash {
+  0%, 50%, 100% {
+     opacity: 1;
+  }
+  25%, 75% {
+     opacity: 0;
+  }
+}

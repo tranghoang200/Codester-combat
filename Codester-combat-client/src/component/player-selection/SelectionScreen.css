@@ -1,0 +1,17 @@
+.cardBox {
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.chooseCharText {
+  color: white;
+  margin-bottom: 30px;
+}
+.main {
+  background: rgba(221, 129, 25, 0.548);
+  box-shadow: rgba(207, 196, 223, 0.3) 0px 19px 38px,
+    rgba(190, 178, 197, 0.22) 0px 15px 12px;
+}

@@ -1,0 +1,89 @@
+.leaderboard-container {
+    /* position: relative; */
+    border: 3px solid yellow;
+    background-color:#101624;
+    width: 40%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 120px;
+    border-radius: 20px;
+}
+
+.leaderboard-row {
+    margin: auto;
+    margin-bottom: 5px;
+    margin-bottom: 0;
+    background-color: #39485E;
+    height: 40px; 
+    width: 80%;
+    justify-self: center;
+    margin-top: 3%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+@keyframes zoom {
+    50% {
+        transform: scale(1.04);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+.leaderboard-row:nth-child(5) {
+    background-color: #e48519;
+    animation: zoom 20s infinite ease-in-out;
+    filter: drop-shadow(0 0 6px #dda148);
+}
+
+
+.cardBox {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.victoryImg {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    top: 1%;
+}
+ .user {
+    /* background-color: #39485E; */
+    height: 100px; 
+    width: 90%;
+    justify-self: center;
+    color: white;
+ }
+
+ .buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+ }
+
+ .playAgain {
+    position: absolute;
+    background-color: black;
+    border-radius: 15px;
+    border: 1px solid white;
+    color: white;
+    left: 50px;
+ }
+
+ .exit {
+    position: absolute;
+    background-color: black;
+    border-radius: 15px;
+    border: 1px solid white;
+    color: white;
+    right: 50px;
+ }

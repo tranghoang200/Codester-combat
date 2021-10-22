@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Trang Hoang",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "apollo-server": "^3.4.0",
+    "apollo-server-express": "^3.4.0",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^15.6.1",
+    "graphql-compose": "^9.0.4",
+    "graphql-compose-mongoose": "^9.7.0",
+    "mongoose": "^6.0.11",
+    "mongoose-timestamp": "^0.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
